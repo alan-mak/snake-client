@@ -12,6 +12,14 @@ const connect = function() {
   conn.on('connect', () => console.log("Successfully connected to game server"));
   // Snake display name
   conn.on('connect', () => conn.write("Name: MAK"));
+  // Move the Snake
+  // conn.on('connect', () => 
+  // setInterval(() => {
+  //   conn.write("Move: up")
+  //   conn.write("Move: left")
+  // }, 50)
+  // )  
+
   // interpret incoming data as text
   conn.setEncoding('utf8'); 
   // interrpret messages from the server
